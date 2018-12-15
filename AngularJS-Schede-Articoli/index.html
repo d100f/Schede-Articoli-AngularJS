@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schede tecniche prodotti - 2018</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.js"></script>
+    <script src="script/controller.js"></script>
+    <link rel="stylesheet" href="style/style.css"/>
+  </head>
+  <body ng-controller="mainController">
+    <h1>Schede tecniche prodotti</h1>
+    <ul class="product-list">
+      <li ng-repeat="product in products">
+
+        <img ng-src="img/products/{{product.codice}}.png" alt="{{product.nome}}" style="padding-top: 10px;"/>
+
+        <div class="info">
+          <p class="codex">{{product.codice}}</p>
+          <p class="name">{{product.nome}}</p>
+          <p class="textdes"><b style="color: brown;">Descrizione: </b>{{product.des}}</p>
+          <p class="textdes"><b style="color: brown;">Materiale: </b>{{product.mater}}</p>
+          <p class="textdes"><b style="color: brown;">Dimensioni: </b>{{product.dim}}</p>
+          <p class="textdes"><b style="color: brown;">Prezzo: </b>{{product.prezzo}}</p>
+        </div>
+
+      </li>
+    </ul>
+  </body>
+</html>

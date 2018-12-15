@@ -1,0 +1,56 @@
+
+html{
+    font-family: Arial,Verdana,Helvetica,sans-serif;
+}
+
+body {
+  text-align: center;
+
+}
+
+h1 {
+  color: orange;
+  text-shadow: 2px 2px 1px #CCC;
+}
+
+.product-list{
+    padding-left: 0em;
+    list-style: none;
+/*    border: solid red 1px;*/
+    display: inline-block;
+    text-align: center;
+}
+
+.product-list li {
+    width: 270px;
+    border: 1px solid #C1C1C1;
+    border-radius: 10px;
+    margin: 10px;
+    float: left;
+}
+
+.product-list .info {
+    padding: 10px;
+    height: 310px;
+    text-align: left;
+    float: right;
+    background: -moz-linear-gradient(center bottom , #EEE 5%, #FFF 95%) repeat scroll 0px 0px transparent;
+}
+
+.codex {
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 1px #CCC;
+}
+
+.name {
+  color: orange;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.textdes {
+  font-size: 15px;
+  text-align: justify;
+  font-weight: normal;
+}
